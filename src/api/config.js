@@ -1,8 +1,11 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://unadvisedly-bibliopegic-sharon.ngrok-free.dev",
   timeout: 1000,
+  headers: {
+    'ngrok-skip-browser-warning': 'true'
+  },
 });
 
 instance.interceptors.request.use(
