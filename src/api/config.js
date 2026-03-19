@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: "https://unadvisedly-bibliopegic-sharon.ngrok-free.dev",
-  timeout: 1000,
+  timeout: 10000,
   headers: {
     'ngrok-skip-browser-warning': 'true'
   },
